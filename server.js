@@ -16,7 +16,6 @@ server.get('/', () => {
 //Operação de Criação de Video
 server.post('/videos',  async (request, reply) => {
     const {title, description, duration} = request.body
-    console.log({title, description, duration})
 
 
     await database.create({
